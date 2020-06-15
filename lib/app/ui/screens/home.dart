@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/HmsGmsCheck.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/location.dart';
+import 'package:hmsallkitsflutter/app/ui/screens/map.dart';
 import 'package:hmsallkitsflutter/app/ui/widgets/header.dart';
 
 class HomePage extends StatelessWidget {
@@ -61,7 +62,8 @@ class _HomePageState extends State<HomePageStateful> {
               child: new Column(
                 children: <Widget>[
                   generateButton("HMS/GMS Check", HmsGmsCheck()),
-                  generateButton("HMS Location", LocationPage())
+                  generateButton("HMS Location", LocationPage()),
+                  generateButton("Huawei Map", HmsMaps()),
                 ],
               ),
             )
