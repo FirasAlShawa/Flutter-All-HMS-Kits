@@ -27,8 +27,15 @@ class _HmsGmsCheckState extends State<HmsGmsCheckStateful> {
   bool _isHmsAvailable;
   bool _isGmsAvailable;
 
-  bool _isHmsLoad = false;
-  bool _isGmsLoad = false;
+  @override
+  void initState() {
+    checkHmsGms();
+  }
+
+  void checkHmsGms() async {
+    await _isHMS();
+    await _isGMS();
+  }
 
   Future<void> _isHMS() async {
     bool status;
@@ -62,25 +69,8 @@ class _HmsGmsCheckState extends State<HmsGmsCheckStateful> {
     });
   }
 
-  void checkHmsGms() async {
-    if (!_isHmsLoad) {
-      await _isHMS();
-      setState(() {
-        _isHmsLoad = true;
-      });
-    }
-    if (!_isGmsLoad) {
-      await _isGMS();
-      setState(() {
-        _isGmsLoad = true;
-      });
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
-    checkHmsGms();
-
     return Scaffold(
         appBar: AppBar(
           title: Text(widget.title),
@@ -94,14 +84,36 @@ class _HmsGmsCheckState extends State<HmsGmsCheckStateful> {
               padding: EdgeInsets.all(20),
               child: new Column(
                 children: <Widget>[
-                  Text(
-                    "HMS Available: $_isHmsAvailable",
-                    style: Theme.of(context).textTheme.headline6,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "HMS Available:",
+                        style: Theme.of(context).textTheme.headline6,
+                      ),
+                      Text(
+                        "$_isHmsAvailable",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: _isHmsAvailable ? Colors.green : Colors.red),
+                      ),
+                    ],
                   ),
-                  Text(
-                    "GMS Available: $_isGmsAvailable",
-                    style: Theme.of(context).textTheme.headline6,
-                  )
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "GMS Available:",
+                        style: Theme.of(context).textTheme.headline6,
+                      ),
+                      Text(
+                        "$_isGmsAvailable",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: _isGmsAvailable ? Colors.green : Colors.red),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             )

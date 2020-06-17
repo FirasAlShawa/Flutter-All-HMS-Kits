@@ -81,6 +81,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  huawei_ads:
+    dependency: "direct main"
+    description:
+      path: "hms_packages/huawei_ads"
+      relative: true
+    source: path
+    version: "4.0.4"
+  huawei_analytics:
+    dependency: "direct main"
+    description:
+      path: "hms_packages/huawei_analytics"
+      relative: true
+    source: path
+    version: "4.0.4"
   huawei_location:
     dependency: "direct main"
     description:
@@ -92,6 +106,20 @@ packages:
     dependency: "direct main"
     description:
       path: "hms_packages/huawei_map"
+      relative: true
+    source: path
+    version: "4.0.4"
+  huawei_push:
+    dependency: "direct main"
+    description:
+      path: "hms_packages/huawei_push"
+      relative: true
+    source: path
+    version: "4.0.4"
+  huawei_site:
+    dependency: "direct main"
+    description:
+      path: "hms_packages/huawei_site"
       relative: true
     source: path
     version: "4.0.4"

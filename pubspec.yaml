@@ -27,6 +27,15 @@ dependencies:
     path: ./hms_packages/huawei_location
   huawei_map:
     path: ./hms_packages/huawei_map
+  huawei_site:
+    path: ./hms_packages/huawei_site
+  huawei_push:
+    path: ./hms_packages/huawei_push
+  huawei_analytics:
+    path: ./hms_packages/huawei_analytics
+  huawei_ads:
+    path: ./hms_packages/huawei_ads
+
 
 
   # The following adds the Cupertino Icons font to your application.

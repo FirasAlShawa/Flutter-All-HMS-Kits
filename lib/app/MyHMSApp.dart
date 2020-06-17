@@ -19,7 +19,7 @@ class _MyHMSAppState extends State<MyHMSApp> {
     return MaterialApp(
       title: 'Flutter All HMS Kits',
       theme: ThemeData(
-          primaryColor: Color(0xFF14568C), brightness: Brightness.light),
+          primaryColor: Colors.red, brightness: Brightness.light),
       darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
