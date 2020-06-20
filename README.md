@@ -1,5 +1,6 @@
 # Flutter All HMS Kits
 
+![Flutter + HMS = Awesome Apps](./screenshots/flutter-plus-hms.jpeg)
 
 In this repository we try to combine all **HMS Flutter Kits** in one Project!
 
@@ -22,6 +23,10 @@ Flutter HMS packages integrated in this project :
 8.  **Huawei Ads Kit.**
 
 9.  **HMS In App Purchase Kit.** (Coming Soon)
+
+## Repository link
+
+[https://github.com/salmanyaqoob/Flutter-All-HMS-Kits](https://github.com/salmanyaqoob/Flutter-All-HMS-Kits)
 
 ## Download APK
 
