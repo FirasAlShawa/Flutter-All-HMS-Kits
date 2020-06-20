@@ -6,6 +6,7 @@ import 'package:hmsallkitsflutter/app/ui/screens/location.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/map.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/push.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/site.dart';
+import 'package:hmsallkitsflutter/app/ui/screens/iap.dart';
 import 'package:hmsallkitsflutter/app/ui/widgets/header.dart';
 
 class HomePage extends StatelessWidget {
@@ -73,6 +74,7 @@ class _HomePageState extends State<HomePageStateful> {
                   generateButton("HMS Push", PushPage()),
                   generateButton("Huawei Analytics", AnalyticsPage()),
                   generateButton("Huawei Ads", AdsPage()),
+                  generateButton("Huawei In-App Purchase", IapPage()),
                 ],
               ),
             )

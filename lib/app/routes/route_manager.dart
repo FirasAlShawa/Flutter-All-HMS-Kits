@@ -3,6 +3,7 @@ import 'package:hmsallkitsflutter/app/ui/screens/HmsGmsCheck.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/ads_page.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/analytics.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/home.dart';
+import 'package:hmsallkitsflutter/app/ui/screens/iap.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/location.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/location/pages/activity_conversion_screen.dart';
 import 'package:hmsallkitsflutter/app/ui/screens/location/pages/activity_identification_screen.dart';
@@ -27,6 +28,7 @@ Map<String, WidgetBuilder> buildNamedRoutes() {
     '/push': (BuildContext context) => PushPage(),
     '/analytics': (BuildContext context) => AnalyticsPage(),
     '/ads': (BuildContext context) => AdsPage(),
+    '/iap': (BuildContext context) => IapPage(),
     // Location & Pages
     '/location': (BuildContext context) => LocationPage(),
     LocationFlowPage.routeName: (context) => LocationFlowPage(),
